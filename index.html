@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilingual Talent Access & Retention Risk Intelligence™ - Strategisch talentbeheer voor tweetalige professionals in België">
+    <title>Bilingual Talent Access & Retention Risk Intelligence™ | Homieux Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="https://homieuxmedia.com" target="_blank" rel="noopener noreferrer" class="logo-link" aria-label="Homieux Media - Terug naar hoofdwebsite">
+                <img src="logo-homieux.png" alt="Homieux Media Logo" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="tag">Strategisch HR Intelligence</span>
+                    <h1>Bilingual Talent Access &<br>Retention Risk Intelligence™</h1>
+                    <p class="subtitle">Optimaliseer uw workforce efficiency. Structurele talentplanning voor juridische en accountancykantoren in Vlaanderen en Brussel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="assessment" id="assessment">
+            <div class="container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                
+                <form id="talentForm" class="assessment-form" novalidate>
+                    <!-- Step 1: Firm Size -->
+                    <div class="step active" data-step="1">
+                        <div class="step-header">
+                            <span class="step-number">01</span>
+                            <h2>Grootte van uw kantoor</h2>
+                            <p class="step-description">Het aantal professionals bepaalt de complexiteit van uw workforce planning.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="firmSize" value="small" required>
+                                <span class="option-content">
+                                    <span class="option-title">50–100 professionals</span>
+                                    <span class="option-detail">Wendbare structuur, kritieke afhankelijkheid van sleutelpersonen</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="firmSize" value="medium" required>
+                                <span class="option-content">
+                                    <span class="option-title">100–150 professionals</span>
+                                    <span class="option-detail">Consolidatiefase, structurele retentiedruk</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="firmSize" value="large" required>
+                                <span class="option-content">
+                                    <span class="option-title">150–250 professionals</span>
+                                    <span class="option-detail">Volwassen organisatie, strategische optimalisatie noodzakelijk</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-primary" id="nextBtn1" disabled>Doorgaan</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Bilingual Exposure -->
+                    <div class="step" data-step="2">
+                        <div class="step-header">
+                            <span class="step-number">02</span>
+                            <h2>Tweetalige klantblootstelling</h2>
+                            <p class="step-description">Uw afhankelijkheid van FR/NL of EN-competenties bepaalt de operationele kwetsbaarheid.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="bilingualExposure" value="low" required>
+                                <span class="option-content">
+                                    <span class="option-title">Minder dan 25%</span>
+                                    <span class="option-detail">Overwegend eentalige klantenkring, beperkt risico</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="bilingualExposure" value="medium" required>
+                                <span class="option-content">
+                                    <span class="option-title">25% tot 50%</span>
+                                    <span class="option-detail">Significant tweetalig segment, monitoring vereist</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="bilingualExposure" value="high" required>
+                                <span class="option-content">
+                                    <span class="option-title">Meer dan 50%</span>
+                                    <span class="option-detail">Kritieke afhankelijkheid, strategische prioriteit</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-secondary" id="prevBtn2">Terug</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn2" disabled>Doorgaan</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Region -->
+                    <div class="step" data-step="3">
+                        <div class="step-header">
+                            <span class="step-number">03</span>
+                            <h2>Hoofdvestigingsregio</h2>
+                            <p class="step-description">Arbeidsmarktspanning varieert significant per arbeidsmarktregio.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="region" value="brussels" required>
+                                <span class="option-content">
+                                    <span class="option-title">Brussel</span>
+                                    <span class="option-detail">Hyperconcurrerende markt, maximale salarisdruk</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="region" value="antwerp" required>
+                                <span class="option-content">
+                                    <span class="option-title">Antwerpen / Vlaanderen</span>
+                                    <span class="option-detail">Hoge vraag naar tweetaligen, significante spanning</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="region" value="liege" required>
+                                <span class="option-content">
+                                    <span class="option-title">Luik / Wallonië</span>
+                                    <span class="option-detail">Markt in transitie, positioneringskansen</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="region" value="other" required>
+                                <span class="option-content">
+                                    <span class="option-title">Overige België</span>
+                                    <span class="option-detail">Specifieke lokale dynamiek te evalueren</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-secondary" id="prevBtn3">Terug</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn3" disabled>Doorgaan</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Hiring Pressure -->
+                    <div class="step" data-step="4">
+                        <div class="step-header">
+                            <span class="step-number">04</span>
+                            <h2>Huidige wervingsdruk</h2>
+                            <p class="step-description">Uw wervingshouding beïnvloedt de stabiliteit van het bestaande team.</p>
+                        </div>
+                        <div class="options-grid">
+                            <label class="option-card">
+                                <input type="radio" name="hiringPressure" value="stable" required>
+                                <span class="option-content">
+                                    <span class="option-title">Stabiel</span>
+                                    <span class="option-detail">Enkel vervanging, geen actieve groei</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="hiringPressure" value="moderate" required>
+                                <span class="option-content">
+                                    <span class="option-title">Matige werving</span>
+                                    <span class="option-detail">Organische groei, enkele strategische posities</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="hiringPressure" value="aggressive" required>
+                                <span class="option-content">
+                                    <span class="option-title">Aggressieve werving</span>
+                                    <span class="option-detail">Majore expansie, intense marktconcurrentie</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="step-actions">
+                            <button type="button" class="btn btn-secondary" id="prevBtn4">Terug</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn4" disabled>Analyseer mijn risico</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Results -->
+                    <div class="step" data-step="5">
+                        <div class="results-container" id="resultsContainer">
+                            <div class="results-header">
+                                <span class="tag">Analyse voltooid</span>
+                                <h2>Uw workforce efficiency diagnose</h2>
+                                <p class="disclaimer">Deze evaluatie is gebaseerd op modellering van publieke arbeidsmarktsignalen en strategische assumpties.</p>
+                            </div>
+
+                            <div class="risk-dashboard">
+                                <div class="risk-main">
+                                    <div class="risk-level" id="riskLevel">
+                                        <span class="risk-label">Risiconiveau</span>
+                                        <span class="risk-value" id="riskValue">--</span>
+                                        <span class="risk-description" id="riskDescription">--</span>
+                                    </div>
+                                </div>
+
+                                <div class="indicators-grid">
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">Tweetalige premiedruk</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="bilingualPressureBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="bilingualPressureValue">--</span>
+                                    </div>
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">Knelpunt blootstelling</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="scarcityBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="scarcityValue">--</span>
+                                    </div>
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">AI-automatisering hefboom</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="aiLeverageBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="aiLeverageValue">--</span>
+                                    </div>
+                                    <div class="indicator-card">
+                                        <span class="indicator-label">EOR haalbaarheid</span>
+                                        <div class="indicator-bar">
+                                            <div class="indicator-fill" id="eorFeasibilityBar"></div>
+                                        </div>
+                                        <span class="indicator-value" id="eorFeasibilityValue">--</span>
+                                    </div>
+                                </div>
+
+                                <div class="strategic-interpretation">
+                                    <h3>Strategische interpretatie</h3>
+                                    <div class="interpretation-content" id="interpretationContent">
+                                        <!-- Dynamically populated -->
+                                    </div>
+                                </div>
+
+                                <div class="heatmap-section">
+                                    <h3>Tweetalige talentmarkt heatmap</h3>
+                                    <p class="heatmap-note">Modellering gebaseerd op publieke wervingsignalen en LinkedIn-velocity (2024-2025).</p>
+                                    <div class="heatmap" id="marketHeatmap">
+                                        <!-- Dynamically populated -->
+                                    </div>
+                                </div>
+
+                                <div class="cta-section">
+                                    <div class="cta-content">
+                                        <h3>Bespreken we uw workforce strategie?</h3>
+                                        <p>Een gepersonaliseerde 15-minuten analyse voor structurele talentoptimalisatie.</p>
+                                        <a href="https://cal.com/homieux-media/strategisch-kennismakingsgesprek-bespreek-uw-zakelijke-uitdagingen" target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+                                            Plan uw gratis strategisch gesprek
+                                            <span class="btn-note">15 minuten • Zonder verplichtingen</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Homieux Media</span>
+                    <p class="footer-tagline">Strategisch HR intelligence voor Belgische kantoren</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.homieuxmedia.com/nl/privacybeleid" target="_blank" rel="noopener noreferrer">Privacybeleid</a>
+                    <a href="https://www.homieuxmedia.com/nl/gebruiksvoorwaarden" target="_blank" rel="noopener noreferrer">Gebruiksvoorwaarden</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Homieux Media. Alle rechten voorbehouden.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
